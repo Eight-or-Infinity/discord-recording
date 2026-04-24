@@ -209,7 +209,7 @@ def process_zip_in_memory(zip_path):
 
 def mix_files(ogg_files, output_path, minerea_files=None, mode="remove"):
     """Mix multiple OGG files into a single track using ffmpeg amix filter"""
-    cmd = ["ffmpeg"]
+    cmd = ["ffmpeg", "-y"]
     
     # Combine all files if mode is "lower"
     all_files = ogg_files if mode == "remove" else ogg_files + (minerea_files or [])

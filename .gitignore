@@ -19,8 +19,7 @@ env/
 .DS_Store
 Thumbs.db
 
-# Processed audio files
+# Processed files
 *.ogg
-
-# Processed zip archives
+*.png
 *.zip
